@@ -13,7 +13,7 @@ jobs:
 
     steps:
       - name: SET Up AWS Credentials
-        uses: aws-actions/configure-aws-credentials@v1
+        uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: ${{ secrets.IAM_ROLE }}
           aws-region: ${{ secrets.IAM_REGION }}
