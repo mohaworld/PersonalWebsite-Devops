@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Listing Buckets:
+  listing buckets:
     runs-on: ubuntu-latest
 
     steps:
