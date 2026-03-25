@@ -1,6 +1,5 @@
 name: Listing S3 Buckets
 
-
 on:
   push:
     branches: 
@@ -19,9 +18,6 @@ jobs:
           aws-region: ${{ secrets.IAM_REGION }}
 
       - name: List S3 Buckets
-        env:
-          aws-region: ${{ secrets.IAM_REGION }}
         run: |
-         echo "Listing S3 Buckets"
-         aws s3 ls
-
+          echo "Listing S3 Buckets"
+          aws s3 ls
